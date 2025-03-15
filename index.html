@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    
+    <title>Sung Yeji</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">YEJI</div>
+            <ul class="nav-links">
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Introduction -->
+    <section class="intro">
+        <div class="intro_container">
+            <img src="images/me/me.jpg" alt="photo of me" width="300">
+            <div class="intro_desc">
+                <h1>Hi! I'm Yeji</h1>
+                <p>Year 3 Immersive Media Student @ Ngee Ann Polytechnic</p>
+                <a href="#" class="btn">View My Linkedin</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <!-- section class="education">
+        <h2>Education</h2>
+        <div class="education_container">
+            <div class="left">
+                    <h3>2023-2026</h3>
+                    <h3>2019-2022</h3>
+            </div>
+            <div class="center">
+                    <p>Ngee Ann Polytechnic<br>
+                        Diploma of Immersive Media</p>
+            </div>
+            <div class="right">
+                    <p>Director’s List of Semester 3.1</p>
+            </div>
+        </div>
+
+        </div>
+    </section-->
+    
+    <section class="timeline-container">
+        <h1>Education</h1>
+        <div class="event">
+            <div class="event-date">
+                <h3>2023-2026</h3>
+            </div>
+
+            <div class="event-school">
+                <h2>Ngee Ann Polytechnic</h2>
+                <h3>Diploma of Immersive Media</h3>
+            </div>
+
+            <div class="event-content">
+                <h3>Liu Yin Soon Scholarship</h3>
+                <h3>Director’s List of Semester 1.1, 1.2, 2.1</h3>
+            </div>
+        </div>
+
+        <div class="event">
+            <div class="event-date">
+                <h3>2019-2022</h3>
+            </div>
+
+            <div class="event-school">
+                <h2>School of Science & Technology</h2>
+                <h3>Applied Subject: Design Studies</h3>
+            </div>
+
+            <div class="event-content">
+                <h3>2022 Design Studies Book Prize</h3>
+                <h3>SST Character Award</h3>
+                <h3>P for SST Service Award</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <!-- section class="experience">
+        <h2>Experience</h2>
+        <div class="experience_cards">
+            <div class="experience_card_1">
+                <img src="images/me/me.jpg" alt="photo of me" width="300">
+                <h3>Internship</h3>
+                <p>descwiption...</p>
+            </div>
+            <div class="experience_card_2">
+                <img src="images/me/me.jpg" alt="photo of me" width="300">
+                <h3>Internship</h3>
+                <p>descwiption...</p>
+            </div>
+        </div>
+    </section -->
+
+    <!-- Experience Image Slider -->
+    <div class="experience-container swiper">
+        <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+                <il class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/me/me.jpg" alt="photo of me" class="card-image">
+                        <p class="badge">Designer</p>
+                        <p class="card-title">Internship</p>
+                        <p class="card-desc">description...</p>
+                    </a>
+                </il>
+
+                <il class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/me/me.jpg" alt="photo of me" class="card-image">
+                        <p class="badge">Designer</p>
+                        <p class="card-title">Internship</p>
+                        <p class="card-desc">description...</p>
+                    </a>
+                </il>
+
+                <il class="card-item swiper-slide">
+                    <a href="#" class="card-link">
+                        <img src="images/me/me.jpg" alt="photo of me" class="card-image">
+                        <p class="badge">Designer</p>
+                        <p class="card-title">Internship</p>
+                        <p class="card-desc">description...</p>
+                    </a>
+                </il>
+            </ul>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- Linking SwiperJS Script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
