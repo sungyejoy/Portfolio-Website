@@ -9,7 +9,10 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f7f3ef; /* Light beige-like background */
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Nav Bar */
@@ -145,7 +148,7 @@ body {
 
 
 /* Experience */
-.experience {
+/* .experience {
     text-align: center;
     padding: 40px;
     background: #fff;
@@ -177,16 +180,15 @@ body {
     transition: 0.2s ease;
 }
 
-
-.card-list .card-item .card-link:hover{
-    border-color: #5372f0;
-}
-
 .card-list .card-link .card-image{
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #5372f0;
 }
 
 .card-list .card-link .badge{
@@ -206,6 +208,110 @@ body {
     font-weight: 600;
 }
 
+.wrapper{
+    max-width:  1100px;
+    width: 100px;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3) - 20px);
+    gap: 16px;
+    overflow: hidden;
+} */
+
+/* experience -- youtube */
+.carousel .card{
+    height: 342px;
+    list-style:  none;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card-link{
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.card-link:hover{
+    border-color: #5372f0;
+}
+
+.badge{
+    color: #5372f0;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #dde4ff;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper i{
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.wrapper i:first-child{
+    left: -22px;
+}
+
+.wrapper i:last-child{
+    right: -22px;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow: hidden;
+}
+
+.card-image{
+    height: 140px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
 
 /* Media Query */
@@ -218,5 +324,15 @@ body {
     .timeline-container .event .event-date{
         position: static;
         margin-bottom: -20px;
+    }
+
+    .wrapper .carousel{
+        grid-auto-columns: 100%;
+    }
+}
+
+@media (max-width: 900px){
+    .wrapper .carousel{
+        grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
