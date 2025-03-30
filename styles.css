@@ -305,6 +305,11 @@ body {
     overflow: hidden;
 }
 
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
 .card-image{
     height: 140px;
     width: 100%;
